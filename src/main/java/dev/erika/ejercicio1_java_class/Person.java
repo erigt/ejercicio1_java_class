@@ -13,7 +13,23 @@ public class Person {
 		this.dni=dni;
 		this.bornYear=bornYear;
 	}
-	public void render(){
+
+	//Getters & Setters//
+	public String getName(){
+		return name;
+	}
+	public String getfirstName(){
+		return firstName;
+	}
+	public String getDni(){
+		return dni;
+	}
+	public int getbornYear(){
+		return bornYear;
+	}
+
+
+	public void printAll(){
 		System.out.println(name);
 		System.out.println(firstName);
 		System.out.println(dni);

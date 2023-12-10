@@ -9,5 +9,8 @@ public final class App {
         
         Person mari = new Person("Mari", "Limones", "01234567R", 1960);
         Person yoli = new Person("Yoli", "Naranjas", "89012345Y", 1980);
+
+        mari.printAll();
+        yoli.printAll();
     }
 }
