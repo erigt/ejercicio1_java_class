@@ -6,12 +6,19 @@ public class Person {
 	public String firstName;
 	public String dni;
 	public int bornYear;
+	// parte 2:
+	public String countryBirth;
+	public char gender;
 
-	public Person (String name, String firstName, String dni, int bornYear) {
+
+	public Person (String name, String firstName, String dni, int bornYear, String countryBirth, char gender) {
 		this.name=name;
 		this.firstName=firstName;
 		this.dni=dni;
 		this.bornYear=bornYear;
+		// parte 2:
+		this.countryBirth=countryBirth;
+		this.gender=gender;
 	}
 
 	//Getters & Setters//
@@ -27,6 +34,13 @@ public class Person {
 	public int getbornYear(){
 		return bornYear;
 	}
+ //parte 2:
+ public String getcountryBirth(){
+	return countryBirth;
+ }
+ public char getGender (){
+	return gender;
+ }
 
 
 	public void printAll(){
@@ -34,6 +48,9 @@ public class Person {
 		System.out.println(firstName);
 		System.out.println(dni);
 		System.out.println(bornYear);
+		//parte 2:
+		System.out.println(countryBirth);
+		System.out.println(gender);
 	}
 
 }
